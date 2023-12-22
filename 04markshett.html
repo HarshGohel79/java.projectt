@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div {
+
+            /* margin: auto; */
+            text-align: center;
+            background: yellow;
+            height: 500px;
+        }
+
+        /* form
+        {
+            width: 50%;
+            margin: auto;
+        } */
+        table {
+            /* width: 70%; */
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="div">
+
+
+        <div class="center">
+            <h1> Marksheet</h1>
+        </div>
+
+        <form action="" method="get">
+
+            <table>
+                <tr>
+                    <td>1. c language</td>
+                    <td><input type="number" name="" id="c" required></td>
+                </tr>
+
+
+                <tr>
+                    <td>2. c ++ language</td>
+                    <td><input type="number" name="" id="cc" required></td>
+                </tr>
+
+                <tr>
+                    <td> 3. database </td>
+                    <td><input type="number" name="" id="data" required></td>
+                </tr>
+
+                <tr>
+                    <td>4. html </td>
+                    <td><input type="number" name="" id="html" required></td>
+
+                </tr>
+
+                <tr>
+                    <td>5. css </td>
+                    <td><input type="number" name="" id="css" required></td>
+                </tr>
+
+                <tr>
+                    <td> 6. php</td>
+                    <td><input type="number" name="" id="php" required></td>
+                </tr>
+
+                <tr>
+                    <td>7. core java</td>
+                    <td> <input type="number" name="" id="java" required></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <br>
+
+        <div>
+
+            <button onclick="result() , mue()"> Totel</button> 
+            <br> <br> <br>
+
+        
+            <span>totel <input type="text" name="" id="plus"></span><br><br>
+
+            Percentage
+            <span><input type="text" name="" id="pre"></span>
+
+            <br><br>
+            
+            <button onclick="window.location.reload()">Refresh</button>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        c = document.getElementById('c');
+        cc = document.getElementById('cc');
+        data = document.getElementById('data');
+        html = document.getElementById('html');
+        css = document.getElementById('css');
+        php = document.getElementById('php');
+        java = document.getElementById('java');
+        plus = document.getElementById('plus');
+        pre = document.getElementById('pre');
+
+
+        function result() {
+
+            plus.value = Number(c.value) + Number(cc.value) + Number(data.value) + Number(html.value) + Number(css.value) + Number(php.value) + Number(java.value)
+            console.log(plus.value);
+        }
+
+        function mue() {
+            pre.value = ((plus.value) * 100) / 350;
+            console.log(pre.value)
+
+        }
+    </script>
+</body>
+
+</html>

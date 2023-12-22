@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .f {
+            padding: 100px 0px;
+            text-align: center;
+            background: gold;
+        }
+
+        button {
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 50%;
+            height: 25px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Math Operations</h1>
+    <div class="f">
+
+        <span>Enter no 1. <input type="number" id="ent1"></span><br>
+        <span>Enter no 2. <input type="number" id="ent2"></span><br>
+
+        <button onclick="harsh()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="divvv()">%</button>
+        <button onclick="mood()">/</button><br>
+
+        <span>Answer it. <input type="number" id="plus"></span>
+    </div>
+
+    <script>
+        ent1 = document.getElementById('ent1');
+        ent2 = document.getElementById('ent2');
+        plus = document.getElementById('plus');
+
+        span
+
+        function harsh() {
+            // plus.value = ent1.value + ent2.value;
+
+            plus.value = Number(ent1.value) + Number(ent2.value)
+            console.log(plus.value);
+        }
+
+        function sub() {
+            plus.value = ent1.value - ent2.value;
+            console.log(plus.value);
+        }
+
+        function mul() {
+            plus.value = ent1.value * ent2.value;
+            console.log(plus.value);
+        }
+
+        function divvv() {
+            plus.value = ent1.value / ent2.value;
+            console.log(plus.value);
+        }
+
+        function mood() {
+            plus.value = ent1.value % ent2.value;
+            console.log(plus.value);
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
